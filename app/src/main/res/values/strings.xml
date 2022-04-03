@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ticket Movie</string>
+    <string name="lewati_perkenalan">LEWATI PERKENALAN</string>
+    <string name="lanjutkan">LANJUTKAN</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="now_plaing_desc">Lebih mudah untuk mengetahui\nfilm yang sedang tampil</string>
+    <string name="cashless">Cashless</string>
+    <string name="cashless_desc">Gunakan e-wallet untuk\ntransaksi tiket nonton</string>
+    <string name="pre_sale">Presale</string>
+    <string name="pre_sale_desc">Tidak khawatir ketinggalan\nupdate film terbaru</string>
+    <string name="sign_in">Signin</string>
+    <string name="username">User</string>
+    <string name="masuk">MASUK AKUN</string>
+    <string name="daftar_baru">DAFTAR AKUN BARU</string>
+</resources>
