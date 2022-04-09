@@ -17,6 +17,7 @@
         <activity android:name=".SignUpPhotoscreenActivity" android:exported="true" />
         <activity android:name=".HomeScreenActivity" android:exported="true" />
         <activity android:name=".DetailActivity" android:exported="true">
+        <activity android:name=".PilihBangkuActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

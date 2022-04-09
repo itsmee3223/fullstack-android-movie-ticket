@@ -32,4 +32,6 @@
     <string name="movie_sinopsis">The Avengers must stop Thanos, a mad Titan, and his\narmy from getting their hands on all the infinity stones.\nHowever, the mad Titan is prepared to go to any lengths\nto carry out his insane plan.</string>
     <string name="storyboard">Storyboard</string>
     <string name="movie_actor">Who’s Played</string>
+    <string name="pilih_bangku">Pilih Bangku</string>
+    <string name="layar_bioskop">Layar Bioskop</string>
 </resources>
