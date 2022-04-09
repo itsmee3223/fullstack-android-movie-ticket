@@ -9,21 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TicketMovie">
-        <activity
-            android:name=".onboarding.OnBoardingOneActivity"
-            android:exported="false" />
-        <activity
-            android:name=".onboarding.OnBoardingTwoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".onboarding.OnBoardingThreeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreenActivity"
-            android:exported="true">
-        <activity
-            android:name=".SignInActivity"
-            android:exported="true">
+        <activity android:name=".onboarding.OnBoardingOneActivity" />
+        <activity android:name=".onboarding.OnBoardingTwoActivity" />
+        <activity android:name=".onboarding.OnBoardingThreeActivity" />
+        <activity android:name=".SignInActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
