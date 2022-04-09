@@ -7,6 +7,21 @@
     android:background="@color/backgroundBlue"
     tools:context=".onboarding.OnBoardingOneActivity">
 
+    <Button
+        android:id="@+id/btn_home3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_primary"
+        android:text="@string/beli_tiket"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
