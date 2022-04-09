@@ -12,7 +12,10 @@
         <activity android:name=".onboarding.OnBoardingOneActivity" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingThreeActivity" />
-        <activity android:name=".SignInActivity" android:exported="true">
+        <activity android:name=".SignInActivity" android:exported="true" />
+        <activity android:name=".SignUpActivity" android:exported="true" />
+        <activity android:name=".HomeScreenActivity" android:exported="true" />
+        <activity android:name=".SignUpPhotoscreenActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
