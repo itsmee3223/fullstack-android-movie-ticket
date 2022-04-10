@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1044056230713",
+    "project_id": "ticket-movie-9ccff",
+    "storage_bucket": "ticket-movie-9ccff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044056230713:android:47b5628f299f3ff169f6e8",
+        "android_client_info": {
+          "package_name": "com.ramanda.ticketmovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044056230713-cpbcbs5gn8d5tmfk61n0s5o2te9k79o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9SgzmVTG43sJtZ7IN5dIpb2maSrpjDys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044056230713-cpbcbs5gn8d5tmfk61n0s5o2te9k79o8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

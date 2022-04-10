@@ -1,12 +1,22 @@
 package com.ramanda.ticketmovie.onboarding
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ramanda.ticketmovie.R
+import com.ramanda.ticketmovie.SignInActivity
+import com.ramanda.ticketmovie.databinding.ActivityOnBoardingThreeBinding
 
 class OnBoardingThreeActivity : AppCompatActivity() {
+    private  lateinit var binding: ActivityOnBoardingThreeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_on_boarding_three)
+        binding = ActivityOnBoardingThreeBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        binding.btnHome.setOnClickListener{
+            startActivity(Intent(this@OnBoardingThreeActivity, SignInActivity::class.java))
+        }
     }
 }
