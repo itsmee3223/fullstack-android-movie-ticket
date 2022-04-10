@@ -107,14 +107,12 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
@@ -157,14 +155,12 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
@@ -207,14 +203,12 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
@@ -257,14 +251,12 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:src="@drawable/ic_rectangle_booked" />
 
@@ -310,6 +302,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         android:drawableLeft="@drawable/ic_rectangle_empty"
         android:drawablePadding="10dp"
@@ -323,6 +316,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         android:drawableLeft="@drawable/ic_rectangle_selected"
         android:drawablePadding="10dp"

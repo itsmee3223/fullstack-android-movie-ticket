@@ -10,7 +10,7 @@
     <string name="pre_sale_desc">Tidak khawatir ketinggalan\nupdate film terbaru</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
-    <string name="username">User</string>
+    <string name="username">Username</string>
     <string name="masuk">MASUK AKUN</string>
     <string name="daftar_baru">DAFTAR AKUN BARU</string>
     <string name="nama">Nama</string>
@@ -35,4 +35,24 @@
     <string name="pilih_bangku">Pilih Bangku</string>
     <string name="layar_bioskop">Layar Bioskop</string>
     <string name="beli_tiket">Beli Tiket</string>
+    <string name="checkout">Checkout</string>
+    <string name="when">When</string>
+    <string name="datetime"><![CDATA[Date & Time]]></string>
+    <string name="cinema">Cinema</string>
+    <string name="items">Items</string>
+    <string name="total_bayar">Total Harus Bayar</string>
+    <string name="ewallet">E-Wallet</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="bayar_sekarang">Bayar Sekarang</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="saldo_kurang">Saldo pada e-wallet kamu tidak mencukupi untuk melakukan transaksi</string>
+    <string name="happy_watching">Happy Watching!</string>
+    <string name="checkout_success_desc">Tiket telah berhasil dibeli \ndan selamat menikmati film</string>
+    <string name="lihat_tiket">Lihat Tiket</string>
+    <string name="home">Home</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="simpan_data">Simpan Data Baru</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="saldo">Saldo Tersedia</string>
+    <string name="history">History</string>
 </resources>
