@@ -87,30 +87,32 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <LinearLayout
-        android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/white"
+        android:background="@drawable/navbar_shape"
         android:orientation="horizontal"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:src="@drawable/ic_tiket"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:src="@drawable/ic_tiket" />
+
         <ImageView
-            android:src="@drawable/ic_home_active"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:src="@drawable/ic_home_active" />
+
         <ImageView
-            android:src="@drawable/ic_profile"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile" />
 
 
     </LinearLayout>

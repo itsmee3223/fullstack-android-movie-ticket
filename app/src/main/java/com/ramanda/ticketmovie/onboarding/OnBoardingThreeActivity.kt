@@ -3,7 +3,7 @@ package com.ramanda.ticketmovie.onboarding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ramanda.ticketmovie.SignInActivity
+import com.ramanda.ticketmovie.sign.SignInActivity
 import com.ramanda.ticketmovie.databinding.ActivityOnBoardingThreeBinding
 
 class OnBoardingThreeActivity : AppCompatActivity() {

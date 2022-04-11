@@ -18,7 +18,7 @@
         <activity android:name=".onboarding.OnboardingOneActivity" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingThreeActivity" />
-        <activity android:name=".SignInActivity" android:exported="true" />
+        <activity android:name=".sign.SignInActivity" android:exported="true" />
         <activity android:name=".SignUpActivity" android:exported="true" />
         <activity android:name=".SignUpPhotoscreenActivity" android:exported="true" />
         <activity android:name=".HomeScreenActivity" android:exported="true" />

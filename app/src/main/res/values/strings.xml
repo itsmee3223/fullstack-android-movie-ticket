@@ -19,7 +19,6 @@
     <string name="hint_pass">Masukan password</string>
     <string name="hint_name">Masukan nama</string>
     <string name="hint_email">Masukan E-mail</string>
-    <string name="password">Password</string>
     <string name="signup_welcome">Welcome, \nSilviNda</string>
     <string name="upload_nanti">UPLOAD NANTI</string>
     <string name="simpan_dan_lanjutkan">SIMPAN DAN LANJUTKAN</string>
@@ -54,4 +53,5 @@
     <string name="my_wallet">My Wallet</string>
     <string name="saldo">Saldo Tersedia</string>
     <string name="history">History</string>
+    <string name="password">Password</string>
 </resources>
