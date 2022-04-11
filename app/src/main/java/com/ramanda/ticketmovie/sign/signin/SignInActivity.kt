@@ -1,4 +1,4 @@
-package com.ramanda.ticketmovie.sign
+package com.ramanda.ticketmovie.sign.signin
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
 import com.ramanda.ticketmovie.HomeScreenActivity
 import com.ramanda.ticketmovie.databinding.ActivitySignInBinding
+import com.ramanda.ticketmovie.sign.User
+import com.ramanda.ticketmovie.sign.signup.SignUpActivity
 import com.ramanda.ticketmovie.utils.Preferences
 
 
@@ -25,7 +27,6 @@ class SignInActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-//      Mendapatkan data dari firebase
         mDatabse = FirebaseDatabase.getInstance("https://ticket-movie-9ccff-default-rtdb.firebaseio.com").getReference("User")
         preferences = Preferences(this)
 
@@ -56,6 +57,10 @@ class SignInActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             pushLogin(iUsername, iPassword)
+        }
+
+        binding.btnDaftar.setOnClickListener {
+            startActivity(Intent(this@SignInActivity, SignUpActivity::class.java))
         }
     }
 
