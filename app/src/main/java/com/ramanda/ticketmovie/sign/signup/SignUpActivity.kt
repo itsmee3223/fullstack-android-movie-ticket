@@ -82,7 +82,7 @@ class SignUpActivity : AppCompatActivity() {
         mDatabse.child(sUsername).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(data: DataSnapshot) {
                 val user = data.getValue(User::class.java)
-                if(user == null) {
+                if(user != null) {
                     Toast.makeText(this@SignUpActivity, "User sudah digunakan", Toast.LENGTH_LONG).show()
                     return
                 }
@@ -95,7 +95,7 @@ class SignUpActivity : AppCompatActivity() {
                 preferences.setValues("email", iUser.email.toString())
                 preferences.setValues("status", "1")
 
-                startActivity(Intent(this@SignUpActivity, SignUpPhotoscreenActivity::class.java))
+                startActivity(Intent(this@SignUpActivity, SignUpPhotoscreenActivity::class.java).putExtra("nama", iUser))
             }
 
             override fun onCancelled(err: DatabaseError) {
