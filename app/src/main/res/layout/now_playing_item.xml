@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_poster">
+        app:srcCompat="@drawable/poster">
         <ImageView
             android:id="@+id/iv_poster_image"
             android:layout_width="match_parent"
