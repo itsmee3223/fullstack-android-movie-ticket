@@ -75,9 +75,9 @@ class DashboardFragment : Fragment() {
                         startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                     }
 
-                    binding.rvComingSoon.adapter = ComingSoonAdapter(dataList){
-                        startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
-                    }
+//                    binding.rvComingSoon.adapter = ComingSoonAdapter(dataList){
+//                        startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
+//                    }
                 }
             }
 
@@ -91,6 +91,6 @@ class DashboardFragment : Fragment() {
     private fun currency(harga: Double, textView: TextView) {
         val localeId = Locale("in", "ID")
         val formatRupiah = NumberFormat.getCurrencyInstance(localeId)
-        textView.text = formatRupiah.format(harga as Double)
+        textView.text = formatRupiah.format(harga)
     }
 }
