@@ -1,4 +1,4 @@
-package com.ramanda.ticketmovie.home.model
+package com.ramanda.ticketmovie.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

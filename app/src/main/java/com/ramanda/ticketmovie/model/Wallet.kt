@@ -4,7 +4,9 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Plays (
-    var nama: String ?="",
-    var url: String ?=""
+data class Wallet (
+    var title: String ?="",
+    var date: String ?="",
+    var money: Double ,
+    var status: String ?=""
 ): Parcelable
