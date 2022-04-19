@@ -42,9 +42,7 @@ class PilihBangkuActivity : AppCompatActivity() {
                 statusA3 = true
                 total +=1
                 belitiket(total)
-
-                val data = Checkout("A3", "70000")
-                dataList.add(data)
+                dataList.add(Checkout("A3", "70000"))
             }
         }
 
@@ -63,9 +61,7 @@ class PilihBangkuActivity : AppCompatActivity() {
                 statusA4 = true
                 total +=1
                 belitiket(total)
-
-                val data = Checkout("A4", "70000")
-                dataList.add(data)
+                dataList.add(Checkout("A4", "70000"))
             }
         }
 
