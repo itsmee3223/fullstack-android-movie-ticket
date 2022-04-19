@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import com.ramanda.ticketmovie.DashboardFragment
 import com.ramanda.ticketmovie.R
-import com.ramanda.ticketmovie.SettingFragment
-import com.ramanda.ticketmovie.TiketFragment
 import com.ramanda.ticketmovie.databinding.ActivityHomeScreenBinding
+import com.ramanda.ticketmovie.home.dashboard.DashboardFragment
+import com.ramanda.ticketmovie.home.settings.SettingFragment
+import com.ramanda.ticketmovie.home.tiket.TiketFragment
 
 class HomeScreenActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeScreenBinding
