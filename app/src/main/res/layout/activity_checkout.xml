@@ -167,6 +167,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:text="IDR 200.000"
+        android:textStyle="bold"
         android:textColor="@color/green"
         app:layout_constraintBottom_toBottomOf="@+id/textView42"
         app:layout_constraintEnd_toEndOf="parent"
