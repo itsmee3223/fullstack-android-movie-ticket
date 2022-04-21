@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.ramanda.ticketmovie.R
-import com.ramanda.ticketmovie.home.model.Film
+import com.ramanda.ticketmovie.model.Film
 
 class ComingSoonAdapter(private var data: List<Film>,
                         private var listener: (Film) -> Unit) : RecyclerView.Adapter<ComingSoonAdapter.LeagueViewHolder>() {
