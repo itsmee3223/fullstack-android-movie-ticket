@@ -11,4 +11,8 @@
     <color name="backgroundBlue">#14153D</color>
     <color name="btnPrimary">#FF2667</color>
     <color name="btnSecondary">#292A50</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlue">#14153D</color>
+    <color name="colorWhiteGrey">#F7F7F7</color>
+
 </resources>
