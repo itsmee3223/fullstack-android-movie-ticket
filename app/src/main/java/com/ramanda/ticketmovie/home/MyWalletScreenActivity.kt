@@ -32,6 +32,10 @@ class MyWalletScreenActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
+
         loadDummyData()
     }
 

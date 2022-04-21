@@ -47,6 +47,8 @@ class DashboardFragment : Fragment() {
 
         if(!prefrences.getValues("saldo").equals("")) {
             currency(prefrences.getValues("saldo")!!.toDouble(), binding.tvSaldo)
+        } else {
+            binding.tvSaldo.text = "Rp0"
         }
 
         Glide.with(this)

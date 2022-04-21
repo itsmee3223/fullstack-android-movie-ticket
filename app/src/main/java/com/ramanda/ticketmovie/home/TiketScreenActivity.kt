@@ -38,8 +38,8 @@ class TiketScreenActivity : AppCompatActivity() {
             .into(binding.ivPosterImage)
 
         binding.rcCheckout.layoutManager = LinearLayoutManager(this)
-        dataList.add(Checkout("C1",""))
-        dataList.add(Checkout("C2",""))
+        dataList.add(Checkout("A3","70000"))
+        dataList.add(Checkout("A4","70000"))
 
         binding.rcCheckout.adapter = TiketAdapter(dataList) {
         }

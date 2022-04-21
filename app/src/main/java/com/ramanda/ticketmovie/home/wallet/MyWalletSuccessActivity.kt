@@ -19,9 +19,5 @@ class MyWalletSuccessActivity : AppCompatActivity() {
         binding.btnHome.setOnClickListener {
             startActivity(Intent(this@MyWalletSuccessActivity, HomeScreenActivity::class.java))
         }
-
-        binding.btnWallet.setOnClickListener {
-            startActivity(Intent(this@MyWalletSuccessActivity, TiketScreenActivity::class.java))
-        }
     }
 }

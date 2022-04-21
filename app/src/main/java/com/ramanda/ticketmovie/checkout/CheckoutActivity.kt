@@ -14,6 +14,7 @@ import androidx.core.app.NotificationCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ramanda.ticketmovie.R
 import com.ramanda.ticketmovie.databinding.ActivityCheckoutBinding
+import com.ramanda.ticketmovie.home.HomeScreenActivity
 import com.ramanda.ticketmovie.home.TiketScreenActivity
 import com.ramanda.ticketmovie.model.Checkout
 import com.ramanda.ticketmovie.model.Film
@@ -46,6 +47,10 @@ class CheckoutActivity : AppCompatActivity() {
 
         dataList.add(Checkout("Total Harus Dibayar", total.toString()))
 
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
+
         binding.btnBeli.setOnClickListener {
             startActivity(Intent(this@CheckoutActivity, CheckoutSuccessActivity::class.java))
             if (data != null) {
@@ -54,7 +59,8 @@ class CheckoutActivity : AppCompatActivity() {
         }
 
         binding.btnBatal.setOnClickListener {
-            finish()
+            finishAffinity()
+            startActivity(Intent(this@CheckoutActivity, HomeScreenActivity::class.java))
         }
 
         binding.rvCheckout.layoutManager = LinearLayoutManager(this)

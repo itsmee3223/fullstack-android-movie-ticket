@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_home"
+        android:id="@+id/iv_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -100,7 +100,7 @@
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
-        tools:text="@string/cinema"
+        android:text="@string/cinema"
         app:drawableStartCompat="@drawable/ic_local_movies" />
 
     <TextView

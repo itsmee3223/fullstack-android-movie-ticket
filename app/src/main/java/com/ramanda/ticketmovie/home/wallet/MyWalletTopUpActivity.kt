@@ -27,6 +27,10 @@ class MyWalletTopUpActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
+
         initListener()
     }
 
@@ -34,12 +38,152 @@ class MyWalletTopUpActivity : AppCompatActivity() {
         binding.btnTopUp.setOnClickListener {
             startActivity(Intent(this, MyWalletSuccessActivity::class.java))
         }
+
         binding.tv10k.setOnClickListener {
-            if(status10K) {
-                deselectMoney(binding.tv10k)
-                return@setOnClickListener
+            if (!status10K){
+                status10K = true
+                status20K = false
+                status30K = false
+                status40K = false
+                status50K = false
+                status60K = false
+                binding.tv10k.setBackgroundResource(R.drawable.shape_line_pink)
+                binding.tv20k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv30k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv40k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv50k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv60k.setBackgroundResource(R.drawable.shape_line_white)
+
+                binding.btnTopUp.visibility = View.VISIBLE
+                binding.etAmoung.setText("10000")
+            } else {
+                binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.etAmoung.setText("")
+                binding.btnTopUp.visibility = View.VISIBLE
+                status10K = false
             }
-            selectMoney(binding.tv10k)
+        }
+
+        binding.tv20k.setOnClickListener {
+            if (!status20K){
+                status20K = true
+                status10K = false
+                status30K = false
+                status40K = false
+                status50K = false
+                status60K = false
+                binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv20k.setBackgroundResource(R.drawable.shape_line_pink)
+                binding.tv30k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv40k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv50k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv60k.setBackgroundResource(R.drawable.shape_line_white)
+
+                binding.btnTopUp.visibility = View.VISIBLE
+                binding.etAmoung.setText("20000")
+            } else {
+                binding.tv20k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.etAmoung.setText("")
+                binding.btnTopUp.visibility = View.VISIBLE
+                status20K = false
+            }
+        }
+
+        binding.tv30k.setOnClickListener {
+            if (!status30K){
+                status30K = true
+                status10K = false
+                status20K = false
+                status40K = false
+                status50K = false
+                status60K = false
+                binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv20k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv30k.setBackgroundResource(R.drawable.shape_line_pink)
+                binding.tv40k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv50k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv60k.setBackgroundResource(R.drawable.shape_line_white)
+
+                binding.btnTopUp.visibility = View.VISIBLE
+                binding.etAmoung.setText("30000")
+            } else {
+                binding.tv30k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.etAmoung.setText("")
+                binding.btnTopUp.visibility = View.VISIBLE
+                status30K = false
+            }
+        }
+        binding.tv40k.setOnClickListener {
+            if (!status40K){
+                status40K = true
+                status10K = false
+                status20K = false
+                status30K = false
+                status50K = false
+                status60K = false
+                binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv20k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv30k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv40k.setBackgroundResource(R.drawable.shape_line_pink)
+                binding.tv50k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv60k.setBackgroundResource(R.drawable.shape_line_white)
+
+                binding.btnTopUp.visibility = View.VISIBLE
+                binding.etAmoung.setText("40000")
+            } else {
+                binding.tv40k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.etAmoung.setText("")
+                binding.btnTopUp.visibility = View.VISIBLE
+                status40K = false
+            }
+        }
+        binding.tv50k.setOnClickListener {
+            if (!status50K){
+                status50K = true
+                status10K = false
+                status20K = false
+                status30K = false
+                status40K = false
+                status60K = false
+                binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv20k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv30k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv40k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv50k.setBackgroundResource(R.drawable.shape_line_pink)
+                binding.tv60k.setBackgroundResource(R.drawable.shape_line_white)
+
+                binding.btnTopUp.visibility = View.VISIBLE
+                binding.etAmoung.setText("50000")
+            } else {
+                binding.tv50k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.etAmoung.setText("")
+                binding.btnTopUp.visibility = View.VISIBLE
+                status50K = false
+            }
+        }
+        binding.tv60k.setOnClickListener {
+            if (!status60K){
+                status60K = true
+                status10K = false
+                status20K = false
+                status30K = false
+                status40K = false
+                status50K = false
+                binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv20k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv30k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv40k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv50k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.tv60k.setBackgroundResource(R.drawable.shape_line_pink)
+
+                binding.btnTopUp.visibility = View.VISIBLE
+                binding.etAmoung.setText("60000")
+            } else {
+                binding.tv60k.setBackgroundResource(R.drawable.shape_line_white)
+                binding.etAmoung.setText("")
+                binding.btnTopUp.visibility = View.VISIBLE
+                status60K = false
+            }
         }
 
         binding.etAmoung.addTextChangedListener(object : TextWatcher {
@@ -62,36 +206,28 @@ class MyWalletTopUpActivity : AppCompatActivity() {
                     if (s.toString().toInt() >= 10000) {
                         binding.btnTopUp.visibility = View.VISIBLE
                     } else {
-                        binding.tv10k.setTextColor(resources.getColor(R.color.white))
-                        binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
-                        status10K = false
-                        binding.btnTopUp.visibility = View.INVISIBLE
+                        selectBox()
                     }
                 } catch (e : NumberFormatException) {
-                    binding.tv10k.setTextColor(resources.getColor(R.color.white))
-                    binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
-                    status10K = false
-                    binding.btnTopUp.visibility = View.INVISIBLE
+                    selectBox()
                 }
             }
         })
     }
 
-    private fun selectMoney(textView:TextView){
-        textView.setTextColor(resources.getColor(R.color.white))
-        textView.setBackgroundResource(R.drawable.shape_line_pink)
-        status10K = true
-
-        binding.btnTopUp.visibility = View.VISIBLE
-        binding.etAmoung.setText("10000")
-    }
-
-    private fun deselectMoney(textView:TextView){
-        textView.setTextColor(resources.getColor(R.color.white))
-        textView.setBackgroundResource(R.drawable.shape_line_white)
+    private fun selectBox(){
+        binding.tv10k.setBackgroundResource(R.drawable.shape_line_white)
+        binding.tv20k.setBackgroundResource(R.drawable.shape_line_white)
+        binding.tv30k.setBackgroundResource(R.drawable.shape_line_white)
+        binding.tv40k.setBackgroundResource(R.drawable.shape_line_white)
+        binding.tv50k.setBackgroundResource(R.drawable.shape_line_white)
+        binding.tv60k.setBackgroundResource(R.drawable.shape_line_white)
         status10K = false
-
+        status20K = false
+        status30K = false
+        status40K = false
+        status50K = false
+        status60K = false
         binding.btnTopUp.visibility = View.INVISIBLE
-        binding.etAmoung.setText("")
     }
 }

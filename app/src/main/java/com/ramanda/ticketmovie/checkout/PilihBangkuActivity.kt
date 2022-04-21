@@ -27,6 +27,10 @@ class PilihBangkuActivity : AppCompatActivity() {
 
         binding.tvTitle.text = data!!.judul
 
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
+
         binding.ivKursiA3.setOnClickListener {
             if (statusA3) {
                 binding.ivKursiA3.setImageResource(R.drawable.ic_rectangle_empty)

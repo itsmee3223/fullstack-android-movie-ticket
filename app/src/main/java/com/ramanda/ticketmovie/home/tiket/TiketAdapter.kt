@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ramanda.ticketmovie.R
 import com.ramanda.ticketmovie.model.Checkout
+import java.text.NumberFormat
+import java.util.*
 
 class TiketAdapter (private var data: List<Checkout>,
                     private val listener: (Checkout) -> Unit)
@@ -32,10 +34,15 @@ class TiketAdapter (private var data: List<Checkout>,
     class LeagueViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         private val tvTitle: TextView = view.findViewById(R.id.tv_kursi)
+        private val tvHarga: TextView = view.findViewById(R.id.tv_harga)
 
 
         fun bindItem(data: Checkout, listener: (Checkout) -> Unit, context : Context, position : Int) {
 
+            val localeID = Locale("in", "ID")
+            val formatRupiah = NumberFormat.getCurrencyInstance(localeID)
+
+            tvHarga.text = formatRupiah.format(data.harga?.toDouble())
             tvTitle.text = "Seat No. "+data.kursi
 
 
