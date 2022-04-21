@@ -13,7 +13,7 @@ class OnBoardingTwoActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnHome.setOnClickListener {
+        binding.btnNext.setOnClickListener {
             val intent = Intent(this@OnBoardingTwoActivity,
                 OnBoardingThreeActivity::class.java)
             startActivity(intent)

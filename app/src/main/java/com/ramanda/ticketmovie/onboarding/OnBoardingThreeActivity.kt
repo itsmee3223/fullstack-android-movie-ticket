@@ -15,7 +15,8 @@ class OnBoardingThreeActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnHome.setOnClickListener{
+        binding.ivHome.setOnClickListener{
+            finishAffinity()
             startActivity(Intent(this@OnBoardingThreeActivity, SignInActivity::class.java))
         }
     }
