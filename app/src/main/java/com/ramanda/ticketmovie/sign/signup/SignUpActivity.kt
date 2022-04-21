@@ -7,6 +7,7 @@ import android.widget.Toast
 import com.google.firebase.database.*
 import com.ramanda.ticketmovie.databinding.ActivitySignUpBinding
 import com.ramanda.ticketmovie.sign.User
+import com.ramanda.ticketmovie.sign.signin.SignInActivity
 import com.ramanda.ticketmovie.utils.Preferences
 
 class SignUpActivity : AppCompatActivity() {
@@ -28,6 +29,11 @@ class SignUpActivity : AppCompatActivity() {
 
         mDatabse = FirebaseDatabase.getInstance("https://ticket-movie-9ccff-default-rtdb.firebaseio.com").getReference("User")
         preferences = Preferences(this)
+
+        binding.ivBack.setOnClickListener {
+            finishAffinity()
+            startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
+        }
 
         binding.btnLanjut.setOnClickListener {
             sUsername = binding.edtUsername.text.toString()
@@ -64,7 +70,6 @@ class SignUpActivity : AppCompatActivity() {
             }
 
             saveUser(sUsername, sPassword, sNama, sEmail)
-
         }
     }
 
@@ -79,7 +84,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun writeData(sUsername: String, iUser: User) {
-        mDatabse.child(sUsername).addValueEventListener(object : ValueEventListener {
+        mDatabse.child(sUsername).addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(data: DataSnapshot) {
                 val user = data.getValue(User::class.java)
                 if(user != null) {
@@ -95,7 +100,8 @@ class SignUpActivity : AppCompatActivity() {
                 preferences.setValues("email", iUser.email.toString())
                 preferences.setValues("status", "1")
 
-                startActivity(Intent(this@SignUpActivity, SignUpPhotoscreenActivity::class.java).putExtra("nama", iUser))
+                finishAffinity()
+                startActivity(Intent(this@SignUpActivity, SignUpPhotoscreenActivity::class.java).putExtra("data", iUser))
             }
 
             override fun onCancelled(err: DatabaseError) {

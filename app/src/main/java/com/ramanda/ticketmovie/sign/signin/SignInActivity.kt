@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
-import com.ramanda.ticketmovie.HomeScreenActivity
+import com.ramanda.ticketmovie.home.HomeScreenActivity
 import com.ramanda.ticketmovie.databinding.ActivitySignInBinding
 import com.ramanda.ticketmovie.sign.User
 import com.ramanda.ticketmovie.sign.signup.SignUpActivity
@@ -36,7 +36,7 @@ class SignInActivity : AppCompatActivity() {
             startActivity(Intent(this@SignInActivity, HomeScreenActivity::class.java))
         }
 
-        binding.btnHome.setOnClickListener {
+        binding.ivHome.setOnClickListener {
             iUsername = binding.edtUsername.text.toString()
             iPassword = binding.edtPassword.text.toString()
 
