@@ -12,9 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
-import com.ramanda.ticketmovie.DetailActivity
+import com.ramanda.ticketmovie.detail.DetailActivity
 import com.ramanda.ticketmovie.databinding.FragmentDashboardBinding
-import com.ramanda.ticketmovie.home.model.Film
+import com.ramanda.ticketmovie.model.Film
 import com.ramanda.ticketmovie.utils.Preferences
 import java.text.NumberFormat
 import java.util.*
@@ -75,9 +75,9 @@ class DashboardFragment : Fragment() {
                         startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                     }
 
-//                    binding.rvComingSoon.adapter = ComingSoonAdapter(dataList){
-//                        startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
-//                    }
+                    binding.rvComingSoon.adapter = ComingSoonAdapter(dataList){
+                        startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
+                    }
                 }
             }
 
