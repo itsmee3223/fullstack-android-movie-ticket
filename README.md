@@ -2,7 +2,7 @@
 
 ## App Screanshot
 
-<img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664339730/BWA%20Android/Splash_Screen_vt6cyi.png" alt="drawing" width="200"/> &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664342493/BWA%20Android/OB_1_w14mww.png" alt="drawing" width="200"/> &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664342493/BWA%20Android/OB_2_gjlify.png" alt="drawing" width="200"/>
+<img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664339730/BWA%20Android/Splash_Screen_vt6cyi.png" alt="drawing" width="200"/> &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664339728/BWA%20Android/OB_1_s3s3kf.png" alt="drawing" width="200"/> &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664342493/BWA%20Android/OB_2_gjlify.png" alt="drawing" width="200"/>
 
 <img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664342492/BWA%20Android/OB_3_h3uji3.png" alt="drawing" width="200"/> &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664339730/BWA%20Android/Sign_Up_Screen_s9bgjt.png" alt="drawing" width="200"/> &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://res.cloudinary.com/dniq91ewn/image/upload/v1664339730/BWA%20Android/Sign_Up_Photo_Screen_1_fp2fmj.png" alt="drawing" width="200"/>
 
