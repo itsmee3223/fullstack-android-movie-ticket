@@ -16,6 +16,6 @@
 
 
 ## Another Projects
-Android Keripik Store: https://github.com/itsmee3223/android-keripik-store
-Android Keripik Store - SQLite: https://github.com/itsmee3223/android-keripik-store-sqlite
-Android Jetpack Compose Keripik Storage: https://github.com/itsmee3223/android-jetpack-compose-keripik-storage
+1. Android Keripik Store: https://github.com/itsmee3223/android-keripik-store
+2. Android Keripik Store - SQLite: https://github.com/itsmee3223/android-keripik-store-sqlite
+3. Android Jetpack Compose Keripik Storage: https://github.com/itsmee3223/android-jetpack-compose-keripik-storage
